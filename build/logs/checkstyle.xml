@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="2.7.0">
+<file name="/usr/local/jenkins/workspace/bankaccount/src/framework/FrontController.php">
+ <error line="11" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="11" column="2" severity="error" message="Line indented incorrectly; expected at least 4 spaces, found 1" source="Generic.WhiteSpace.ScopeIndent.Incorrect"/>
+ <error line="12" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+ <error line="13" column="1" severity="error" message="Spaces must be used to indent lines; tabs are not allowed" source="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+</file>
+</checkstyle>
+

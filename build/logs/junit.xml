@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BankAccount" tests="57" assertions="42" failures="0" errors="23" time="0.046501">
+    <testsuite name="HashMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/HashMapTest.php" tests="3" assertions="3" failures="0" errors="0" time="0.011108">
+      <testcase name="testIsInitiallyEmpty" class="HashMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/HashMapTest.php" line="10" assertions="1" time="0.010769"/>
+      <testcase name="testSettingDataWorks" class="HashMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/HashMapTest.php" line="23" assertions="1" time="0.000139"/>
+      <testcase name="testExceptionIsRaisedWhenAccessingAnElementThatDoesNotExist" class="HashMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/HashMapTest.php" line="34" assertions="1" time="0.000200"/>
+    </testsuite>
+    <testsuite name="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" tests="8" assertions="8" failures="0" errors="0" time="0.000777">
+      <testcase name="testResponseCanBeConstructed" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="24" assertions="1" time="0.000116"/>
+      <testcase name="testResponseIsUniqueInstance" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="39" assertions="1" time="0.000103"/>
+      <testcase name="testControllerCanBeConstructed" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="49" assertions="1" time="0.000090"/>
+      <testcase name="testMapperCanBeConstructed" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="60" assertions="1" time="0.000049"/>
+      <testcase name="testViewCanBeConstructed" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="71" assertions="1" time="0.000171"/>
+      <testcase name="testResultCanBeConstructed" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="83" assertions="1" time="0.000065"/>
+      <testcase name="testRouterCanBeConstructed" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="97" assertions="1" time="0.000090"/>
+      <testcase name="testExceptionIsRaisedForUnknownType" class="FactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/factory/FactoryTest.php" line="109" assertions="1" time="0.000093"/>
+    </testsuite>
+    <testsuite name="FrontControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/frontcontroller/FrontControllerTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.000233">
+      <testcase name="testDispatchingWorksCorrectly" class="FrontControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/frontcontroller/FrontControllerTest.php" line="17" assertions="0" time="0.000233">
+        <error type="PHPUnit_Framework_ExceptionWrapper">FrontControllerTest::testDispatchingWorksCorrectly
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/framework/frontcontroller/FrontControllerTest.php:25
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="RequestTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/http/RequestTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000065">
+      <testcase name="testRequestUriCanBeRetrieved" class="RequestTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/http/RequestTest.php" line="13" assertions="1" time="0.000065"/>
+    </testsuite>
+    <testsuite name="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" tests="6" assertions="8" failures="0" errors="0" time="0.018640">
+      <testcase name="testIsInitiallyEmpty" class="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" line="19" assertions="2" time="0.018334"/>
+      <testcase name="testObjectCanBeAdded" class="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" line="32" assertions="2" time="0.000172"/>
+      <testcase name="testObjectCanBeRetrievedById" class="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" line="50" assertions="1" time="0.000027"/>
+      <testcase name="testExceptionIsRaisedForNonExistantId" class="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" line="60" assertions="1" time="0.000049"/>
+      <testcase name="testIdCanBeRetrievedForObject" class="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" line="70" assertions="1" time="0.000026"/>
+      <testcase name="testExceptionIsRaisedForNonExistantObject" class="IdentityMapTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/mapper/IdentityMapTest.php" line="80" assertions="1" time="0.000032"/>
+    </testsuite>
+    <testsuite name="RouterTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/router/RouterTest.php" tests="4" assertions="5" failures="0" errors="0" time="0.001065">
+      <testcase name="testCorrectControllerIsSelected" class="RouterTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/router/RouterTest.php" line="21" assertions="2" time="0.000905"/>
+      <testcase name="testDefaultControllerIsSelected" class="RouterTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/router/RouterTest.php" line="36" assertions="1" time="0.000041"/>
+      <testcase name="testExceptionWhenNoControllerCanBeSelected" class="RouterTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/router/RouterTest.php" line="52" assertions="1" time="0.000085"/>
+      <testcase name="testExceptionWhenSomethingIsWrongWithTheValues" class="RouterTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/router/RouterTest.php" line="63" assertions="1" time="0.000034"/>
+    </testsuite>
+    <testsuite name="ResultTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/view/ResultTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000698">
+      <testcase name="testResultCanBeRendered" class="ResultTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/view/ResultTest.php" line="13" assertions="1" time="0.000698"/>
+    </testsuite>
+    <testsuite name="ViewTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/view/ViewTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.001064">
+      <testcase name="testCanBeConstructed" class="ViewTest" file="/usr/local/jenkins/workspace/bankaccount/tests/framework/view/ViewTest.php" line="10" assertions="0" time="0.001064"/>
+    </testsuite>
+    <testsuite name="BankAccountControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/BankAccountControllerTest.php" tests="3" assertions="7" failures="0" errors="0" time="0.009946">
+      <testcase name="testReturnsBankAccountViewWhenBankAccountIsSpecified" class="BankAccountControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/BankAccountControllerTest.php" line="21" assertions="3" time="0.009230"/>
+      <testcase name="testExceptionIsRaisedWhenBankAccountIsNotSpecified" class="BankAccountControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/BankAccountControllerTest.php" line="54" assertions="2" time="0.000632"/>
+      <testcase name="testExceptionIsRaisedWhenBankAccountIsNotFound" class="BankAccountControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/BankAccountControllerTest.php" line="69" assertions="2" time="0.000084"/>
+    </testsuite>
+    <testsuite name="BankAccountListControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/BankAccountListControllerTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.000139">
+      <testcase name="testReturnsListOfBankAccounts" class="BankAccountListControllerTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/BankAccountListControllerTest.php" line="21" assertions="2" time="0.000139"/>
+    </testsuite>
+    <testsuite name="RedirectToBankaccountListTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/RedirectToBankaccountListTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.000129">
+      <testcase name="testReturnsBankAccountViewWhenBankAccountIsSpecified" class="RedirectToBankaccountListTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/controller/RedirectToBankaccountListTest.php" line="18" assertions="2" time="0.000129"/>
+    </testsuite>
+    <testsuite name="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" tests="9" assertions="0" failures="0" errors="9" time="0.000288">
+      <testcase name="testGenericControllerCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="24" assertions="0" time="0.000042">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testGenericControllerCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountListControllerCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="35" assertions="0" time="0.000035">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testBankAccountListControllerCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testRedirectToBankaccountListControllerCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="46" assertions="0" time="0.000032">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testRedirectToBankaccountListControllerCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountControllerCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="57" assertions="0" time="0.000031">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testBankAccountControllerCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testGenericMapperCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="68" assertions="0" time="0.000030">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testGenericMapperCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountMapperCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="79" assertions="0" time="0.000029">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testBankAccountMapperCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testResponseCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="90" assertions="0" time="0.000029">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testResponseCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testResultCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="104" assertions="0" time="0.000029">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testResultCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+      <testcase name="testRouterCanBeConstructed" class="ApplicationFactoryTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php" line="118" assertions="0" time="0.000031">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationFactoryTest::testRouterCanBeConstructed
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/factory/FactoryTest.php:17
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="BankAccountTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/model/BankAccountTest.php" tests="5" assertions="5" failures="0" errors="0" time="0.001454">
+      <testcase name="testBalanceIsInitiallyZero" class="BankAccountTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/model/BankAccountTest.php" line="12" assertions="1" time="0.000025"/>
+      <testcase name="testBalanceCannotBecomeNegative" class="BankAccountTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/model/BankAccountTest.php" line="27" assertions="1" time="0.001357"/>
+      <testcase name="testBalanceCannotBecomeNegative2" class="BankAccountTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/model/BankAccountTest.php" line="39" assertions="1" time="0.000032"/>
+      <testcase name="testDepositingMoneyWorks" class="BankAccountTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/model/BankAccountTest.php" line="49" assertions="1" time="0.000021"/>
+      <testcase name="testWithdrawingMoneyWorks" class="BankAccountTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/model/BankAccountTest.php" line="61" assertions="1" time="0.000019"/>
+    </testsuite>
+    <testsuite name="BankAccountListViewTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/view/BankAccountListViewTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.000120">
+      <testcase name="testIsRenderedCorrectly" class="BankAccountListViewTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/view/BankAccountListViewTest.php" line="14" assertions="0" time="0.000120">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountListViewTest::testIsRenderedCorrectly
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/view/BankAccountListViewTest.php:25
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="BankAccountViewTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/view/BankAccountViewTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.000114">
+      <testcase name="testIsRenderedCorrectly" class="BankAccountViewTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/unit/view/BankAccountViewTest.php" line="14" assertions="0" time="0.000114">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountViewTest::testIsRenderedCorrectly
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/unit/view/BankAccountViewTest.php:30
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" tests="9" assertions="0" failures="0" errors="9" time="0.000499">
+      <testcase name="testListOfBankAccountIdsCanBeRetrieved" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="42" assertions="0" time="0.000203">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testListOfBankAccountIdsCanBeRetrieved
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountCanBeFoundById" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="50" assertions="0" time="0.000040">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountCanBeFoundById
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testExceptionIsRaisedWhenBankAccountCannotBeFoundById" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="65" assertions="0" time="0.000041">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testExceptionIsRaisedWhenBankAccountCannotBeFoundById
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountCanBeInserted" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="73" assertions="0" time="0.000036">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountCanBeInserted
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountCannotBeInsertedTwice" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="90" assertions="0" time="0.000037">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountCannotBeInsertedTwice
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountCanBeUpdated" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="101" assertions="0" time="0.000035">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountCanBeUpdated
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountThatDoesNotExistCannotBeUpdated" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="121" assertions="0" time="0.000037">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountThatDoesNotExistCannotBeUpdated
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountCanBeDeleted" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="130" assertions="0" time="0.000034">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountCanBeDeleted
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+      <testcase name="testBankAccountThatDoesNotExistCannotBeDeleted" class="BankAccountMapperTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php" line="149" assertions="0" time="0.000036">
+        <error type="PHPUnit_Framework_ExceptionWrapper">BankAccountMapperTest::testBankAccountThatDoesNotExistCannotBeDeleted
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/database/mapper/BankAccountMapperTest.php:17
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="ApplicationTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php" tests="2" assertions="0" failures="0" errors="2" time="0.000162">
+      <testcase name="testResponseForBankAccountRequestIsCorrect" class="ApplicationTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php" line="14" assertions="0" time="0.000124">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationTest::testResponseForBankAccountRequestIsCorrect
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php:49
+/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php:16
+</error>
+      </testcase>
+      <testcase name="testResponseForBankAccountListRequestIsCorrect" class="ApplicationTest" file="/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php" line="29" assertions="0" time="0.000038">
+        <error type="PHPUnit_Framework_ExceptionWrapper">ApplicationTest::testResponseForBankAccountListRequestIsCorrect
+PDOException: could not find driver
+
+/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php:49
+/usr/local/jenkins/workspace/bankaccount/tests/application/edge-to-edge/ApplicationTest.php:31
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testsuites>
